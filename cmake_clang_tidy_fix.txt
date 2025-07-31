@@ -1,0 +1,11 @@
+# Clang-tidy target for static analysis - CORRECTED CONFIGURATION
+find_program(CLANG_TIDY_EXE NAMES "clang-tidy")
+if(CLANG_TIDY_EXE)
+    # FIXED: Proper CMake syntax with PROPERTIES keyword
+    set_target_properties(james_core PROPERTIES
+        CXX_CLANG_TIDY "${CLANG_TIDY_EXE};-checks=-*,readability-*,performance-*,bugprone-*,-readability-identifier-length,-readability-convert-member-functions-to-static"
+    )
+    message(STATUS "clang-tidy found and configured: ${CLANG_TIDY_EXE}")
+else()
+    message(STATUS "clang-tidy not found - static analysis disabled")
+endif()

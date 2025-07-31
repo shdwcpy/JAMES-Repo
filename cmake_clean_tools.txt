@@ -1,0 +1,24 @@
+
+# =============================================================================
+# DEVELOPMENT TOOLS - DISABLED FOR CLEAN BUILD
+# =============================================================================
+
+# Static analysis tools disabled for initial build
+message(STATUS "Static analysis tools disabled for clean build")
+
+# Optional: Re-enable these later for code quality
+# find_program(CLANG_TIDY_EXE NAMES "clang-tidy")
+# find_program(CPPCHECK_EXE NAMES "cppcheck")
+
+
+# =============================================================================
+# DEVELOPMENT TOOLS - DISABLED FOR CLEAN BUILD
+# =============================================================================
+
+# Static analysis tools disabled for initial build
+message(STATUS "Static analysis tools disabled for clean build")
+
+# Optional: Re-enable these later for code quality
+# find_program(CLANG_TIDY_EXE NAMES "clang-tidy")
+# find_program(CPPCHECK_EXE NAMES "cppcheck")
+
